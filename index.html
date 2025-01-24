@@ -53,15 +53,17 @@
               <p>In reverse chronological order:</p>
               <ul>
                 <li>
-                  <strong>Jan. 2024:</strong> Multi-model fitting paper accepted to ICRA, see you in Yokohama!
+                  <strong>Jan. 2025:</strong> Conformalized HPE paper accepted to ICLR, see you in Singapore!
                 <li>
-                  <strong>Oct. 2023:</strong> DiffCLIP accepted to WACV, see you in Hawaii!
+                  <strong>Jan. 2024:</strong> Multi-model fitting paper accepted to ICRA, see you in Yokohama!
+                <!-- <li>
+                  <strong>Oct. 2023:</strong> DiffCLIP accepted to WACV, see you in Hawaii! -->
                  <li>
                       <strong>Aug. 2023:</strong> FlowBot++ accepted to CoRL, see you in ATL!
                  <li>
                       <strong>Sep. 2022:</strong> TAX-Pose accepted to CoRL, see you in New Zealand!
-                 <li>
-                      <strong>May 2022:</strong> I am joining Amazon this summer as an applied research scientist, working on 3D learning problems.
+                 <!-- <li>
+                      <strong>May 2022:</strong> I am joining Amazon this summer as an applied research scientist, working on 3D learning problems. -->
                  <li>
                       <strong>Apr. 2022:</strong> FlowBot3D accepted to RSS, see you in NYC!
                  <!-- <li>
@@ -70,10 +72,10 @@
                       <strong>Aug. 2021:</strong> Started grad school at CMU RI. Looking forward to Pittsburgh, PA. -->
                   <li>
                       <strong>May. 2021:</strong> Won the <a href="https://www2.eecs.berkeley.edu/Students/Awards/4/#:~:text=Warren%20Y.-,Dere%20Design%20Award,an%20upper%20division%20design%20course.">Warren Y. Dere Award</a> from UC Berkeley EECS.
-                  <li>
+                  <!-- <li>
                       <strong>Mar. 2021:</strong> Dynamic cable manipulation paper accepted to ICRA 2021.
                   <li>
-                      <strong>Nov. 2020:</strong> Dynamic cable manipulation paper featured at Bay Area Robotics Symposium (BARS) hosted by Stanford.
+                      <strong>Nov. 2020:</strong> Dynamic cable manipulation paper featured at Bay Area Robotics Symposium (BARS) hosted by Stanford. -->
                   <!-- <li>
                       <strong>Nov. 2020:</strong> Dynamic cable manipulation paper submitted to ICRA 2021. -->
                   <li> 
@@ -112,6 +114,28 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img style="width:105%;max-width:105%" src="images/champ.png">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://sites.google.com/view/champ-humanpose">
+                <papertitle>CHAMP: Conformalized 3D Human Multi-Hypothesis Pose Estimators</papertitle>
+              </a>
+              <br>
+              <strong>Harry Zhang</strong>,
+              Luca Carlone
+              <br>
+              <em>Accepted to International Conference on Learning Representations (ICLR), 2025. </em>
+              <br>
+              <a href="https://arxiv.org/html/2407.06141v1">Arxiv</a> |
+              <a href="https://sites.google.com/view/champ-humanpose">Code</a> | 
+              <a href="https://sites.google.com/view/champ-humanpose">Video</a>
+              <br>
+              <p></p>
+              <p>We introduce CHAMP, a novel method for learning sequence-to-sequence, multi-hypothesis 3D human poses from 2D keypoints by leveraging a conditional distribution with a diffusion model. To predict a single output 3D pose sequence, we generate and aggregate multiple 3D pose hypotheses. For better aggregation results, we develop a method to score these hypotheses during training, effectively integrating conformal prediction into the learning process. This process results in a differentiable conformal predictor that is trained end-to-end with the 3D pose estimator. Post-training, the learned scoring model is used as the conformity score, and the 3D pose estimator is combined with a conformal predictor to select the most accurate hypotheses for downstream aggregation. Our results indicate that using a simple mean aggregation on the conformal prediction-filtered hypotheses set yields competitive results. When integrated with more sophisticated aggregation techniques, our method achieves state-of-the-art performance across various metrics and datasets while inheriting the probabilistic guarantees of conformal prediction.</p>
+            </td>
+          </tr>
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <img style="width:105%;max-width:105%" src="images/icra24.png">
