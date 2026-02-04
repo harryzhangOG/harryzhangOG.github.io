@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News — Harry Zhang</title>
+  <meta name="author" content="Harry Zhang">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="images/MIT_logo.webp">
+  <script>if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');</script>
+</head>
+<body>
+
+<nav>
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">Harry Zhang</a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="news.html" class="active">News</a></li>
+      </ul>
+      <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <h1 class="page-title">News</h1>
+  <p class="page-subtitle">Recent updates, in reverse chronological order.</p>
+
+  <ul class="news-list">
+    <li class="news-item">
+      <span class="news-date">Jan 2026</span>
+      <span class="news-text">H2OFlow accepted to <strong>ICLR</strong> — see you in Rio!</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">May 2025</span>
+      <span class="news-text">CUPS accepted to <strong>ICML</strong> — see you in Vancouver!</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">Jan 2025</span>
+      <span class="news-text">Conformalized HPE paper (CHAMP) accepted to <strong>ICLR</strong> — see you in Singapore!</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">Aug 2023</span>
+      <span class="news-text">FlowBot++ accepted to <strong>CoRL</strong> — see you in ATL!</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">Sep 2022</span>
+      <span class="news-text">TAX-Pose accepted to <strong>CoRL</strong> — see you in New Zealand!</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">Apr 2022</span>
+      <span class="news-text">FlowBot3D accepted to <strong>RSS</strong> — see you in NYC!</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">May 2021</span>
+      <span class="news-text">Won the <a href="https://www2.eecs.berkeley.edu/Students/Awards/4/">Warren Y. Dere Award</a> from UC Berkeley EECS.</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">Jun 2020</span>
+      <span class="news-text">Dex-Net AR featured on <a href="https://venturebeat.com/2020/06/11/dex-net-ar-uses-apples-arkit-to-train-robots-to-grasp-objects/">VentureBeat</a>.</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">Jun 2020</span>
+      <span class="news-text">Dex-Net AR featured on <a href="https://www.sohu.com/a/401322985_213766?_f=index_pagefocus_7&_trans_=000014_bdss_dkbjxgyq">Sohu</a>.</span>
+    </li>
+  </ul>
+
+</main>
+
+<footer>
+  <div class="footer-tracker">
+    <a href="https://clustrmaps.com/site/1bq7z" title="Visit tracker"><img src="https://www.clustrmaps.com/map_v2.png?d=GiGzh5Add_ZbUUGpnWqADykY66Y_HPEziDZJuH-aD1Q&cl=ffffff" alt="Visit tracker"></a>
+  </div>
+  <p class="footer-copy">&copy; 2026 Harry Zhang</p>
+</footer>
+
+<script>
+  var toggle = document.querySelector('.theme-toggle');
+  if (document.documentElement.classList.contains('dark')) toggle.textContent = '☀️';
+  toggle.addEventListener('click', function () {
+    var isDark = document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    this.textContent = isDark ? '☀️' : '🌙';
+  });
+</script>
+
+</body>
+</html>

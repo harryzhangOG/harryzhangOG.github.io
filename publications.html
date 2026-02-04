@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications — Harry Zhang</title>
+  <meta name="author" content="Harry Zhang">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="images/MIT_logo.webp">
+  <script>if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');</script>
+</head>
+<body>
+
+<nav>
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">Harry Zhang</a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="publications.html" class="active">Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="news.html">News</a></li>
+      </ul>
+      <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <h1 class="page-title">Publications</h1>
+  <p class="page-subtitle">Peer-reviewed papers and preprints, newest first.</p>
+
+  <!-- ===== Peer-Reviewed ===== -->
+  <div class="pub-section-label">Peer-Reviewed</div>
+
+  <!-- 1. H2OFlow -->
+  <div class="pub-entry">
+    <div class="pub-thumb">
+      <img src="images/h2oflow.png" alt="H2OFlow">
+    </div>
+    <div class="pub-info">
+      <h3 class="pub-title"><a href="https://sites.google.com/view/h2oflow/home">H2OFlow: Grounding Human-Object Affordances with 3D Generative Models and Dense Diffused Flows</a></h3>
+      <p class="pub-authors"><strong>Harry Zhang</strong>, Luca Carlone</p>
+      <p class="pub-venue">International Conference on Learning Representations (ICLR), 2026</p>
+      <div class="pub-links">
+        <a href="https://arxiv.org/pdf/2510.21769">Arxiv</a>
+      </div>
+      <p class="pub-abstract">We introduce H2OFlow, a novel framework that comprehensively learns 3D HOI affordances — encompassing contact, orientation, and spatial occupancy — using only synthetic data generated from 3D generative models. H2OFlow employs a dense 3D-flow-based representation, learned through a dense diffusion process operating on point clouds. This learned flow enables the discovery of rich 3D affordances without the need for human annotations.</p>
+    </div>
+  </div>
+
+  <!-- 2. Max Entropy -->
+  <div class="pub-entry">
+    <div class="pub-thumb">
+      <img src="images/maxent.png" alt="Max Entropy Moment Kalman Filter">
+    </div>
+    <div class="pub-info">
+      <h3 class="pub-title">Max Entropy Moment Kalman Filter for Polynomial Systems with Arbitrary Noise</h3>
+      <p class="pub-authors">Sangli Teng, <strong>Harry Zhang</strong>, David Jin, Ashkan Jasour, Ram Vasudevan, Maani Ghaffari, Luca Carlone</p>
+      <p class="pub-venue">Conference on Neural Information Processing Systems (NeurIPS), 2025</p>
+      <div class="pub-links">
+        <a href="https://arxiv.org/pdf/2506.00838">Arxiv</a>
+      </div>
+      <p class="pub-abstract">We model the noise in the process and observation model of nonlinear non-Gaussian systems as Max-Entropy Distributions (MED). We propagate the moments through the process model and recover the distribution as MED, thus avoiding symbolic integration, which is generally intractable. All steps in MEM-KF, including the extraction of a point estimate, can be solved via convex optimization.</p>
+    </div>
+  </div>
+
+  <!-- 3. CUPS -->
+  <div class="pub-entry">
+    <div class="pub-thumb">
+      <img src="images/cups.png" alt="CUPS">
+    </div>
+    <div class="pub-info">
+      <h3 class="pub-title"><a href="https://sites.google.com/view/champpp">CUPS: Improving Human Pose-Shape Estimators with Conformalized Deep Uncertainty</a></h3>
+      <p class="pub-authors"><strong>Harry Zhang</strong>, Luca Carlone</p>
+      <p class="pub-venue">International Conference on Machine Learning (ICML), 2025</p>
+      <div class="pub-links">
+        <a href="https://arxiv.org/abs/2412.10431">Arxiv</a>
+        <a href="https://sites.google.com/view/champpp">Video</a>
+      </div>
+      <p class="pub-abstract">We introduce CUPS, a novel method for learning sequence-to-sequence 3D human shapes and poses from RGB videos with uncertainty quantification. We develop a method to score multiple hypotheses proposed during training, effectively integrating uncertainty into the learning process. This results in a deep uncertainty function trained end-to-end with the 3D pose estimator.</p>
+    </div>
+  </div>
+
+  <!-- 4. CHAMP -->
+  <div class="pub-entry">
+    <div class="pub-thumb">
+      <img src="images/champ.png" alt="CHAMP">
+    </div>
+    <div class="pub-info">
+      <h3 class="pub-title"><a href="https://sites.google.com/view/champ-humanpose">CHAMP: Conformalized 3D Human Multi-Hypothesis Pose Estimators</a></h3>
+      <p class="pub-authors"><strong>Harry Zhang</strong>, Luca Carlone</p>
+      <p class="pub-venue">International Conference on Learning Representations (ICLR), 2025</p>
+      <div class="pub-links">
+        <a href="https://arxiv.org/html/2407.06141v1">Arxiv</a>
+        <a href="https://sites.google.com/view/champ-humanpose">Code</a>
+        <a href="https://sites.google.com/view/champ-humanpose">Video</a>
+      </div>
+      <p class="pub-abstract">We introduce CHAMP, a novel method for learning sequence-to-sequence, multi-hypothesis 3D human poses from 2D keypoints by leveraging a conditional distribution with a diffusion model. We generate and aggregate multiple 3D pose hypotheses, developing a differentiable conformal predictor trained end-to-end with the 3D pose estimator.</p>
+    </div>
+  </div>
+
+  <!-- 5. CRISP -->
+  <div class="pub-entry">
+    <div class="pub-thumb">
+      <img src="images/crisp.png" alt="CRISP">
+    </div>
+    <div class="pub-info">
+      <h3 class="pub-title"><a href="https://web.mit.edu/sparklab/research/crisp_object_pose_shape/">CRISP: Object Pose and Shape Estimation with Test-Time Adaptation</a></h3>
+      <p class="pub-authors">Jingnan Shi, Rajat Talak, <strong>Harry Zhang</strong>, David Jin, Luca Carlone</p>
+      <p class="pub-venue">Conference on Computer Vision and Pattern Recognition (CVPR), 2025. <span class="spotlight">Spotlight.</span></p>
+      <div class="pub-links">
+        <a href="https://arxiv.org/pdf/2412.01052">Arxiv</a>
+        <a href="https://web.mit.edu/sparklab/research/crisp_object_pose_shape/">Code</a>
+        <a href="https://web.mit.edu/sparklab/research/crisp_object_pose_shape/">Video</a>
+      </div>
+      <p class="pub-abstract">We introduce CRISP, a category-agnostic object pose and shape estimation pipeline implementing an encoder-decoder model for shape estimation. It uses FiLM-conditioning for implicit shape reconstruction and a DPT-based network for estimating pose-normalized points. We also propose an optimization-based pose and shape corrector that can correct estimation errors caused by a domain gap.</p>
+    </div>
+  </div>
+
+  <!-- 6. Multi-Model 3D Registration -->
+  <div class="pub-entry">
+    <div class="pub-thumb">
+      <img src="images/icra24.png" alt="Multi-Model 3D Registration">
+    </div>
+    <div class="pub-info">
+      <h3 class="pub-title">Multi-Model 3D Registration: Finding Multiple Moving Objects in Cluttered Point Clouds</h3>
+      <p class="pub-authors">David Jin, Sushrut Karmalkar, <strong>Harry Zhang</strong>, Luca Carlone</p>
+      <p class="pub-venue">IEEE International Conference on Robotics and Automation (ICRA), 2024</p>
+      <p class="pub-abstract">We investigate a variation of the 3D registration problem, named multi-model 3D registration. We are given two point clouds picturing a set of objects at different poses (and possibly including background points) and want to simultaneously reconstruct how all objects moved between the two point clouds.</p>
+    </div>
+  </div>
+
+  <!-- 7. FlowBot++ -->
+  <div class="pub-entry">
+    <div class="pub-thumb">
+      <img src="images/fbpp.gif" alt="FlowBot++">
+    </div>
+    <div class="pub-info">
+      <h3 class="pub-title"><a href="https://sites.google.com/view/flowbotpp/home">FlowBot++: Learning Generalized Articulated Objects Manipulation via Articulation Projection</a></h3>
+      <p class="pub-authors"><strong>Harry Zhang</strong>, <a href="https://beisner.me/">Benjamin Eisner</a>, <a href="https://davheld.github.io/">David Held</a></p>
+      <p class="pub-venue">Conference on Robot Learning (CoRL), 2023</p>
+      <div class="pub-links">
+        <a href="https://arxiv.org/abs/2306.12893">Arxiv</a>
+        <a href="https://github.com/harryzhangOG/flowbotpp">Code</a>
+        <a href="https://sites.google.com/view/flowbotpp/home">Video</a>
+        <a href="https://openreview.net/forum?id=psLlVbTFBua">OpenReview</a>
+      </div>
+      <p class="pub-abstract">We explore a novel method to perceive and manipulate 3D articulated objects that generalizes to enable the robot to articulate unseen classes of objects.</p>
+    </div>
+  </div>
+
+  <!-- 8. TAX-Pose -->
+  <div class="pub-entry">
+    <div class="pub-thumb">
+      <img src="images/taxpose.gif" alt="TAX-Pose">
+    </div>
+    <div class="pub-info">
+      <h3 class="pub-title"><a href="https://sites.google.com/view/tax-pose/home">TAX-Pose: Task-Specific Cross-Pose Estimation for Robot Manipulation</a></h3>
+      <p class="pub-authors"><a href="https://www.ri.cmu.edu/ri-people/brian-e-okorn/">Brian Okorn*</a>, Chu Er Pan*, <strong>Harry Zhang*</strong>, <a href="https://beisner.me/">Benjamin Eisner*</a>, <a href="https://davheld.github.io/">David Held</a></p>
+      <p class="pub-venue">Conference on Robot Learning (CoRL), 2022 (* indicates equal contribution)</p>
+      <div class="pub-links">
+        <a href="https://arxiv.org/abs/2211.09325">Arxiv</a>
+        <a href="https://github.com/r-pad/taxpose">Code</a>
+        <a href="https://sites.google.com/view/tax-pose/home">Video</a>
+        <a href="https://openreview.net/forum?id=YmJi0bTfeNX">OpenReview</a>
+      </div>
+      <p class="pub-abstract">We conjecture that the task-specific pose relationship between relevant parts of interacting objects is a generalizable notion of a manipulation task that can transfer to new objects. We propose a vision-based system that learns to estimate the cross-pose between two objects for a given manipulation task.</p>
+    </div>
+  </div>
+
+  <!-- 9. FlowBot3D -->
+  <div class="pub-entry">
+    <div class="pub-thumb">
+      <img src="images/montage.gif" alt="FlowBot3D">
+    </div>
+    <div class="pub-info">
+      <h3 class="pub-title"><a href="https://sites.google.com/view/articulated-flowbot-3d/home">FlowBot3D: Learning 3D Articulation Flow to Manipulate Articulated Objects</a></h3>
+      <p class="pub-authors"><a href="https://beisner.me/">Benjamin Eisner*</a>, <strong>Harry Zhang*</strong>, <a href="https://davheld.github.io/">David Held</a></p>
+      <p class="pub-venue">Robotics: Science and Systems (RSS), 2022 (* indicates equal contribution) — <span class="spotlight">Long talk, Best Paper Award Finalist (Selection Rate 1.5%)</span></p>
+      <div class="pub-links">
+        <a href="http://arxiv.org/abs/2205.04382">Arxiv</a>
+        <a href="https://github.com/r-pad/flowbot3d">Code</a>
+        <a href="https://sites.google.com/view/articulated-flowbot-3d/home">Video</a>
+        <a href="https://youtu.be/AZjzndMv9dU?t=2277">Berkeley CPAR Talk</a>
+        <a href="https://www.mittrchina.com/news/detail/10606">MIT Tech Review</a>
+        <a href="https://www.sohu.com/a/554596988_129720">Synced Review</a>
+        <a href="https://www.cs.cmu.edu/news/2022/robots-articulated-objects">CMU Highlights</a>
+      </div>
+      <p class="pub-abstract">We explore a novel method to perceive and manipulate 3D articulated objects that generalizes to enable the robot to articulate unseen classes of objects.</p>
+    </div>
+  </div>
+
+  <!-- 10. AVPLUG -->
+  <div class="pub-entry">
+    <div class="pub-thumb">
+      <img src="images/avplug.png" alt="AVPLUG">
+    </div>
+    <div class="pub-info">
+      <h3 class="pub-title">AVPLUG: Approach Vector Planning for Unicontact Grasping amid Clutter</h3>
+      <p class="pub-authors">Yahav Avigal*, Vishal Satish*, <strong>Harry Zhang</strong>, Huang Huang, <a href="https://mjd3.github.io/">Michael Danielczuk</a>, <a href="https://ichnow.ski/">Jeffrey Ichnowski</a>, <a href="https://goldberg.berkeley.edu/">Ken Goldberg</a></p>
+      <p class="pub-venue">Conference on Automation Science and Engineering (CASE), 2021</p>
+      <div class="pub-links">
+        <a href="https://ieeexplore.ieee.org/document/9551652">Paper</a>
+      </div>
+      <p class="pub-abstract">We present AVPLUG: Approach Vector Planning for Unicontact Grasping — an algorithm for efficiently finding the approach vector using an efficient oct-tree occupancy model and Minkowski sum computation to maximize information gain.</p>
+    </div>
+  </div>
+
+  <!-- 11. Robots of the Lost Arc -->
+  <div class="pub-entry">
+    <div class="pub-thumb">
+      <img src="images/20201030_Goldberg_AVL_0623_stack.jpg" alt="Robots of the Lost Arc">
+    </div>
+    <div class="pub-info">
+      <h3 class="pub-title"><a href="https://sites.google.com/berkeley.edu/dynrope/home">Robots of the Lost Arc: Self-Supervised Learning to Dynamically Manipulate Fixed-Endpoint Cables</a></h3>
+      <p class="pub-authors"><strong>Harry Zhang</strong>, <a href="https://ichnow.ski/">Jeffrey Ichnowski</a>, <a href="https://people.eecs.berkeley.edu/~seita/">Daniel Seita</a>, Jonathan Wang, Huang Huang, <a href="https://goldberg.berkeley.edu/">Ken Goldberg</a></p>
+      <p class="pub-venue">International Conference on Robotics and Automation (ICRA), 2021</p>
+      <div class="pub-links">
+        <a href="https://arxiv.org/abs/2011.04840">Arxiv</a>
+        <a href="https://github.com/harryzhangOG/rope">Code</a>
+        <a href="https://youtu.be/MsROcNm4qgs?t=2318">BARS Coverage</a>
+        <a href="https://youtu.be/R8DqX5Hg_IE?t=193">ICRA Workshop</a>
+      </div>
+      <p class="pub-abstract">We propose a self-supervised learning framework that enables a UR5 robot to dynamically manipulate cables. The framework finds a 3D apex point for the robot arm, which, together with a task-specific trajectory function, defines an arcing motion that dynamically manipulates the cable to perform tasks with varying obstacle and target locations.</p>
+    </div>
+  </div>
+
+  <!-- 12. Dex-Net AR -->
+  <div class="pub-entry">
+    <div class="pub-thumb">
+      <img src="images/dex-net-ar.png" alt="Dex-Net AR">
+    </div>
+    <div class="pub-info">
+      <h3 class="pub-title"><a href="https://sites.google.com/berkeley.edu/dex-net-ar/home">Dex-Net AR: Distributed Deep Grasp Planning Using a Commodity Cellphone and Augmented Reality App</a></h3>
+      <p class="pub-authors"><strong>Harry Zhang</strong>, <a href="https://ichnow.ski/">Jeffrey Ichnowski</a>, Yahav Avigal, <a href="https://people.eecs.berkeley.edu/~jegonzal/">Joseph Gonzalez</a>, <a href="https://people.eecs.berkeley.edu/~istoica/">Ion Stoica</a>, <a href="https://goldberg.berkeley.edu/">Ken Goldberg</a></p>
+      <p class="pub-venue">International Conference on Robotics and Automation (ICRA), 2020</p>
+      <div class="pub-links">
+        <a href="https://goldberg.berkeley.edu/pubs/2020-ICRA-Zhang-Dex-Net-AR.pdf">Paper</a>
+        <a href="https://github.com/harryzhangOG/dexnet-ar">Code</a>
+        <a href="https://youtu.be/piOTIFZgKME">Video</a>
+        <a href="https://venturebeat.com/2020/06/11/dex-net-ar-uses-apples-arkit-to-train-robots-to-grasp-objects/">VentureBeat</a>
+        <a href="https://www.sohu.com/a/401322985_213766?_f=index_pagefocus_7&_trans_=000014_bdss_dkbjxgyq">Sohu</a>
+      </div>
+      <p class="pub-abstract">We present Dex-Net AR, a distributed pipeline that allows point clouds to be uploaded to a server, cleaned, and evaluated by the Dex-Net grasp planner to generate a grasp axis that is returned and displayed as an overlay on the object.</p>
+    </div>
+  </div>
+
+  <!-- 13. Orienting Novel Objects -->
+  <div class="pub-entry">
+    <div class="pub-thumb">
+      <img src="images/orient.png" alt="Orienting Novel Objects">
+    </div>
+    <div class="pub-info">
+      <h3 class="pub-title"><a href="https://berkeleyautomation.github.io/Orienting_Novel_3D_Objects/">Orienting Novel Objects using Self-Supervised Rotation Estimation</a></h3>
+      <p class="pub-authors">Shivin Devgon, <a href="https://ichnow.ski/">Jeffrey Ichnowski</a>, <a href="https://abalakrishna123.github.io/">Ashwin Balakrishna</a>, <strong>Harry Zhang</strong>, <a href="https://goldberg.berkeley.edu/">Ken Goldberg</a></p>
+      <p class="pub-venue">Conference on Automation Science and Engineering (CASE), 2020</p>
+      <div class="pub-links">
+        <a href="https://drive.google.com/file/d/1BzpqTT801NK8AmrULfJJOQsquN0vqnzx/view">Paper</a>
+        <a href="https://github.com/BerkeleyAutomation/Orienting_Novel_3D_Objects">Code</a>
+        <a href="https://www.youtube.com/watch?v=nij_JgNP1qw&ab_channel=ShivinDevgon">Video</a>
+      </div>
+      <p class="pub-abstract">We present an algorithm to orient novel objects given a depth image of the object in its current and desired orientation.</p>
+    </div>
+  </div>
+
+  <!-- ===== Preprints ===== -->
+  <div class="pub-section-label">Preprints</div>
+
+  <!-- Preprint 1 -->
+  <div class="pub-entry">
+    <div class="pub-thumb">
+      <img src="images/dynamic-cable-160.gif" alt="Dynamic Cable Manipulation">
+    </div>
+    <div class="pub-info">
+      <h3 class="pub-title">Self-Supervised Learning of Dynamic Planar Manipulation of Free-End Cables</h3>
+      <p class="pub-authors">Jonathan Wang*, Huang Huang*, Vincent Lim, <strong>Harry Zhang</strong>, <a href="https://ichnow.ski/">Jeffrey Ichnowski</a>, <a href="https://people.eecs.berkeley.edu/~seita/">Daniel Seita</a>, Yunliang Chen, <a href="https://goldberg.berkeley.edu/">Ken Goldberg</a></p>
+      <p class="pub-venue">Preprint, in submission to ICRA, 2022</p>
+      <p class="pub-abstract">We present an algorithm to train a robot to control free-end cables in a self-supervised fashion.</p>
+    </div>
+  </div>
+
+  <!-- Preprint 2 -->
+  <div class="pub-entry">
+    <div class="pub-thumb">
+      <img src="images/salved.png" alt="Safe Deep Model-Based RL">
+    </div>
+    <div class="pub-info">
+      <h3 class="pub-title">Safe Deep Model-Based Reinforcement Learning with Lyapunov Functions</h3>
+      <p class="pub-authors">Bobby Yan*, <strong>Harry Zhang*</strong>, Huang Huang*</p>
+      <p class="pub-venue">Preprint, 2022</p>
+      <p class="pub-abstract">We introduce and explore a novel method for adding safety constraints for model-based RL during training and policy learning.</p>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="footer-tracker">
+    <a href="https://clustrmaps.com/site/1bq7z" title="Visit tracker"><img src="https://www.clustrmaps.com/map_v2.png?d=GiGzh5Add_ZbUUGpnWqADykY66Y_HPEziDZJuH-aD1Q&cl=ffffff" alt="Visit tracker"></a>
+  </div>
+  <p class="footer-copy">&copy; 2026 Harry Zhang</p>
+</footer>
+
+<script>
+  var toggle = document.querySelector('.theme-toggle');
+  if (document.documentElement.classList.contains('dark')) toggle.textContent = '☀️';
+  toggle.addEventListener('click', function () {
+    var isDark = document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    this.textContent = isDark ? '☀️' : '🌙';
+  });
+</script>
+
+</body>
+</html>

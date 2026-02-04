@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teaching — Harry Zhang</title>
+  <meta name="author" content="Harry Zhang">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="images/MIT_logo.webp">
+  <script>if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');</script>
+</head>
+<body>
+
+<nav>
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">Harry Zhang</a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html" class="active">Teaching</a></li>
+        <li><a href="news.html">News</a></li>
+      </ul>
+      <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <h1 class="page-title">Teaching</h1>
+  <p class="page-subtitle">Courses taught and assisted at CMU and UC Berkeley.</p>
+
+  <!-- Carnegie Mellon -->
+  <div class="teaching-block">
+    <div class="school-header">
+      <img src="images/cmu.png" alt="Carnegie Mellon University">
+    </div>
+    <ul class="course-list">
+      <li><strong>10-725</strong> — Graduate Convex Optimization</li>
+      <li><strong>16-385</strong> — Computer Vision</li>
+    </ul>
+  </div>
+
+  <!-- UC Berkeley -->
+  <div class="teaching-block">
+    <div class="school-header">
+      <img src="images/berkeley_eecs.png" alt="UC Berkeley EECS">
+    </div>
+    <ul class="course-list">
+      <li><strong>CS 189</strong> — Introduction to Machine Learning</li>
+      <li><strong>EE 127</strong> — Introduction to Convex Optimization</li>
+      <li><strong>CS 188</strong> — Introduction to Artificial Intelligence</li>
+      <li><strong>CS 170</strong> — Algorithms</li>
+      <li><strong>ME C231A</strong> — Model Predictive Control</li>
+    </ul>
+  </div>
+
+</main>
+
+<footer>
+  <div class="footer-tracker">
+    <a href="https://clustrmaps.com/site/1bq7z" title="Visit tracker"><img src="https://www.clustrmaps.com/map_v2.png?d=GiGzh5Add_ZbUUGpnWqADykY66Y_HPEziDZJuH-aD1Q&cl=ffffff" alt="Visit tracker"></a>
+  </div>
+  <p class="footer-copy">&copy; 2026 Harry Zhang</p>
+</footer>
+
+<script>
+  var toggle = document.querySelector('.theme-toggle');
+  if (document.documentElement.classList.contains('dark')) toggle.textContent = '☀️';
+  toggle.addEventListener('click', function () {
+    var isDark = document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    this.textContent = isDark ? '☀️' : '🌙';
+  });
+</script>
+
+</body>
+</html>
